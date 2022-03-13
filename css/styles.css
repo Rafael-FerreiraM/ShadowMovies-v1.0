@@ -2,11 +2,12 @@
 
 :root{
     --bg-gray: #000000;
-    --color-primary:#120A8F;
+    --color-primary:hsl(244, 87%, 30%);
     --white: fff;
     --text-gray: #4a4a4a;
     --text-light-gray: rgb(133, 131, 131);
     --star-yellow: #FFBB3A;
+     --cor-caixa: rgb(0, 183, 255);    
 
 }
 
@@ -75,7 +76,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 #ShadowMovies-card-list{
-    padding: 50px 70px;
+    padding: 0 10px;
     display: flex;
     align-items:center;
     flex-direction: column;
@@ -190,5 +191,51 @@ h1, h2, h3, h4, h5, h6{
     font-weight: 400;
     color: rgb(53, 51, 51);
     margin-bottom: 10px;
+
+}
+.ShadowMovies-pagination-container{
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+.ShadowMovies-pagination-box{
+    display:flex;
+    width: 180px;
+    justify-content:space-between;
+    align-items: center;
+}
+.ShadowMovies-pagination-box p{
+    margin: 0;
+    color: rgb(252, 252, 252);
+    font-size: 12px;
+    font-weight: 400;
+
+}
+.ShadowMovies-pagination-box button{
+    width:40px;
+    height:40px;
+    border: 1px solid color var(--cor-caixa);
+    border-radius: 4px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.ShadowMovies-pagination-box:disabled{
+    border: 1px solid;
+
+}
+.ShadowMovies-flip-horizontal{
+    transform: rotate(180deg);
+}
+
+.ShadowMovies-pagination-box button img{
+
+
+filter: brightness(0) saturate(100%)invert(13%) sepia(85%) saturate(3179%) hue-rotate(233deg) brightness(82%) contrast(111%);
+
+}
+
+.ShadowMovies-pagination-box:disabled img{
+    filter: unset;
 
 }
